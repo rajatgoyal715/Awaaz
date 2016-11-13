@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rajatgoyal.awaaz.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main">
+
+    <!--violet-#9c27b0-->
+    <!--pinkish-#f74399-->
+    <!--red-#f2060d-->
+    <!--cool red-#f44336-->
+    <!--light blue-#3787f7-->
+    <!--dark blue-#445297-->
+    <!--light orange-#ff9a52-->
+    <!--dtu library-light-#4db9b7-->
+    <!--dtu library-dark-#368786-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.0"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@color/texttospeech"
+            android:onClick="click1"
+            android:alpha="0.7">
+
+            <ImageView
+                android:id="@+id/main1"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_hearing_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Text To Speech"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:alpha="0.7"
+            android:onClick="click2"
+            android:background="@color/speechtotext">
+
+            <ImageView
+                android:id="@+id/main2"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_mic_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Speech To Text"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@color/recorder"
+            android:layout_gravity="top"
+            android:alpha="0.7"
+            android:onClick="click3"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/main3"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_voice_chat_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="Audio Recorder"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@color/about"
+            android:layout_gravity="top"
+            android:alpha="0.7"
+            android:onClick="click4"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/main4"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_mic_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="About"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@color/speechtospeech"
+            android:onClick="click5"
+            android:alpha="0.7"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main5"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_hearing_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Speech To Speech"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@color/texttospeech"
+            android:onClick="click5"
+            android:visibility="invisible"
+            android:alpha="0.7"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main6"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_hearing_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Speech To Speech"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

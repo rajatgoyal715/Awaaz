@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rajatgoyal.awaaz.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/about"
+        android:alpha="0.7">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AWAAZ"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/version_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Version  1.0"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/develop_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:text="Developed By :"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/developer_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:text="RAJAT GOYAL"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/linkedin_id"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="10sp"
+                android:onClick="click1"
+                android:src="@drawable/linkedin_logo"
+                android:cropToPadding="true" />
+            <ImageView
+                android:id="@+id/share_id"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="10sp"
+                android:onClick="click2"
+                android:src="@drawable/play_store_logo"/>
+            <ImageView
+                android:id="@+id/email_id"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="10sp"
+                android:onClick="click3"
+                android:src="@drawable/gmail_logo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

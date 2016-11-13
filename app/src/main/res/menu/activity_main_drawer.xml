@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_text_to_speech"
+            android:icon="@drawable/ic_hearing_black_24dp"
+            android:title="Text To Speech" />
+        <item
+            android:id="@+id/nav_speech_to_text"
+            android:icon="@drawable/ic_mic_black_24dp"
+            android:title="Speech To Text" />
+        <item
+            android:id="@+id/nav_speech_to_speech"
+            android:icon="@drawable/ic_mic_black_24dp"
+            android:title="Speech To Speech" />
+        <item
+            android:id="@+id/nav_recorder"
+            android:icon="@drawable/ic_voice_chat_black_24dp"
+            android:title="Voice Recorder" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="About" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>
